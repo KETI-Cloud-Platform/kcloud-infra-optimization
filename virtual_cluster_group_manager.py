@@ -66,7 +66,7 @@ class VirtualClusterGroupManager:
     
     def __init__(self):
         self.auth_config = {
-            'auth_url': os.getenv('OS_AUTH_URL', 'http://10.0.4.200:5000/v3'),
+            'auth_url': os.getenv('OS_AUTH_URL', 'http://localhost:5000/v3'),
             'username': os.getenv('OS_USERNAME', 'admin'),
             'password': os.getenv('OS_PASSWORD', ''),
             'project_name': os.getenv('OS_PROJECT_NAME', 'cloud-platform'),

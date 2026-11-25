@@ -9,7 +9,7 @@ import json
 from datetime import datetime
 
 # 환경 변수 설정
-os.environ['OS_CLIENT_CONFIG_FILE'] = '/root/kcloud_opt/clouds.yaml'
+os.environ.setdefault('OS_CLIENT_CONFIG_FILE', os.path.expanduser('~/.config/openstack/clouds.yaml'))
 
 from openstack_cluster_crud import OpenStackClusterCRUD, ClusterConfig
 

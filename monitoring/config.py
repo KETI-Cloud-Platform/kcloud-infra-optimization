@@ -10,7 +10,7 @@ from typing import Dict, List, Optional
 @dataclass
 class OpenStackConfig:
     """OpenStack 연결 설정"""
-    auth_url: str = os.getenv('OS_AUTH_URL', "http://10.0.4.200:5000/v3")
+    auth_url: str = os.getenv('OS_AUTH_URL', "http://localhost:5000/v3")
     username: str = os.getenv('OS_USERNAME', "admin")
     password: str = os.getenv('OS_PASSWORD', "")
     project_name: str = os.getenv('OS_PROJECT_NAME', "cloud-platform")
